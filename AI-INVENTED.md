@@ -40,3 +40,19 @@ Not invented: no testimonials, awards, names, prices, email address, WhatsApp nu
 | Option names in the tool: wall colours (Bone, Sand, Clay, Sage, Mist, Umber), fabric colours (Ivory, Blush, Pebble, Sage, Slate, Chocolate), rugs (Oatmeal, Charcoal, Rust), hardware (Brass, Black, Nickel), headboards (Rounded, Tufted, Channel), bedside lights, curtains, wardrobes, and the four starting points (Quiet Sand, Evening Bronze, Sage and Brass, Blush and Grey) | `js/room.js` | Invented labels for a demo palette. They are not the studio's real material range or finishes. Material swatches (feature wall, flooring, wardrobe) are crops of the studio's real photographs (GM01, GM06, GM07, GM16, GM19); the plank swatch is a CSS gradient. |
 | The bedroom illustration itself | `index.html`, `#room` (inline SVG) | Drawn in code as a stylised vector sketch, not a photograph and not an AI-generated image. It does not depict any real project. |
 | Removed the "Atmosphere" selector (Amber Aurora, Sun & Shadow, Nocturne Bronze) and the blurred ambient background | `index.html`, `css/style.css`, `js/main.js` | Design decision, no content. |
+
+## Depth and voice pass (29 Oct 2026)
+
+Copy was rewritten because the previous wording read as machine-written: abstract headings
+("Four pillars of architectural harmony") and the same `A · B · C` keyword triplet under every
+photograph. All of it is still sample copy for this concept and still unconfirmed by the studio.
+
+| Item | Where | Notes |
+|---|---|---|
+| Hero headline "Homes finished down to the last brass handle." and blurb "Interior design in Gurugram. Layout, joinery, stone and light, drawn and fitted one room at a time." | `index.html`, hero | Replaces "Interior design, shaped around living." and its blurb. "Gurugram" comes from the studio's public address; the scope described (layout, joinery, stone, light) follows what the public photographs show and is **not** a confirmed service list. |
+| Statement section "Good rooms are not decorated. They are measured, drawn and built." | `index.html`, `#credo` | **New section.** An invented line of design philosophy, not a studio quote. Flagged on the page itself: "A line written for this concept, not a quote from the studio." |
+| Studio heading "Every room starts with a tape measure and a conversation." | `index.html`, `#studio` | Replaces "Rooms shaped around the way people actually live." Describes an ordinary way of working, not a confirmed studio process. |
+| Section headings "The same four ideas, every room.", "Up close.", "Tell us about the room." | `index.html`, `#themes`, `#details`, `#enquire` | Replace "Four pillars of architectural harmony.", "Closer looks" and "Let's shape your space." No factual claims. |
+| Work card and Closer-looks descriptions rewritten from keyword triplets into sentences (e.g. "Geometric table · Cove light · Panelling" became "A black and white geometric top, with warm cove light washing the panelled wall behind it.") | `index.html`, `#work`, `#details` | Still only descriptions of what each photograph shows. No project names, clients, locations or materials beyond what is visible. |
+| Pillar descriptions reworded; themes hint now reads "Form, material, light and detail. Choose one to see it in the studio's own photographs." | `index.html`, `#themes` | Same meaning, shorter. Interface guidance. |
+| Nav labels "Pillars" → "Four ideas" and "Closer looks" → "Up close" | `index.html`, hero nav, compact bar, menu, footer | Navigation labels only, matched to the new headings. |

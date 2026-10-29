@@ -193,6 +193,8 @@
   }
   const splits = $$('[data-split]');
   splits.forEach(splitWords);
+  const scrubEl = $('[data-scrub]');
+  if (scrubEl) splitWords(scrubEl);
 
   /* ---------- One-shot scroll reveals ---------- */
   (function reveals() {
@@ -220,6 +222,28 @@
       watched.get(target).push(el);
     });
     root.classList.add('rv-on');
+  })();
+
+  /* ---------- Statement: words warm from dim to lit, in reading order, as it scrolls up ---------- */
+  (function statement() {
+    if (!scrubEl) return;
+    const words = $$('.w__i', scrubEl);
+    if (!words.length) return;
+    if (reducedMQ.matches) { words.forEach(w => w.classList.add('is-lit')); return; }
+    let lit = -1;
+    const update = () => {
+      const r = scrubEl.getBoundingClientRect();
+      if (r.bottom < -100 || r.top > innerHeight + 100) return;
+      // The line fills as the heading rises from the bottom of the screen, and is complete
+      // by the time it sits comfortably above centre, so it is never read half lit.
+      const from = innerHeight * 0.92, to = innerHeight * 0.45;
+      const n = Math.round(clamp((from - r.top) / (from - to), 0, 1) * words.length);
+      if (n === lit) return;
+      for (let i = 0; i < words.length; i++) words[i].classList.toggle('is-lit', i < n);
+      lit = n;
+    };
+    hooks.push(update);
+    update();
   })();
 
   /* ---------- Menu panel ---------- */

@@ -69,6 +69,19 @@ components:
 
 # Design System: Aayaadi Designs
 
+> **Depth and voice pass, 29 Oct 2026 (latest).** Grounds were given a real tonal ladder so
+> elevation reads before any shadow is drawn: `--ink #130f0b`, `--bone #f1ebdf`, `--stone #e6dac6`,
+> `--white #fffcf5`. Brass carries more chroma (`--brass #9a6522`, 4.9:1 with white) and the gold
+> button is now solid with a lit top edge and a warm cast, not a horizontal gradient. Shadows are
+> warm rather than neutral grey and are built as a tight contact shadow plus a wide ambient one;
+> photographs sit in a hairline mount (`inset` ring plus lit top edge). Fraunces is pinned to
+> `"opsz" 144` with a lower `SOFT` on display headings, so hairlines stay fine at size. `--muted`
+> was darkened to `#655949` to clear AA on the stone ground (4.9:1). A new `#credo` statement
+> section sits between the studio and the work gallery: a dark beat whose words warm from dim to
+> lit in reading order as it scrolls up (`main.js`, driven by the existing scroll hooks, and all
+> words are lit at once under `prefers-reduced-motion`). Section copy was rewritten away from
+> abstract headings and repeated `A · B · C` keyword triplets; see `AI-INVENTED.md`.
+>
 > **Polish pass, 29 Oct 2026.** The tokens in the frontmatter above predate this pass. The shipped system in `css/style.css` now uses warm grounds (`--ink #17130f`, `--bone #f6f1e7`, `--stone #ece3d3`, `--white #fffdf8`), brass `#85571d` / `#96631f` with champagne `#e8cf9f` on ink, Fraunces display (light, italic brass emphasis word) over Geist body, and a clamp-based type scale. The blurred ambient orbs and the Atmosphere selector were removed. Depth now comes from layered plate shadows (offset plus blur), a brass offset frame on the pillars exhibition, and scrubbed parallax. Hover never scales photographs. Motion is word-mask headings, a clip-path wipe for plates, a wipe exhibition for the pillars, a loupe on Closer looks and a scroll-driven process line.
 
 ## Overview

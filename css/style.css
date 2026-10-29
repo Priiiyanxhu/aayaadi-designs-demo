@@ -10,24 +10,30 @@
 @font-face { font-family: "Geist"; src: url("../fonts/geist/Geist-VF.ttf") format("truetype"); font-weight: 100 900; font-style: normal; font-display: swap; }
 
 :root {
-  --ink: #17130f;
-  --ink-2: #1f1913;
-  --bone: #f6f1e7;
-  --stone: #ece3d3;
-  --stone-2: #dfd2bb;
-  --white: #fffdf8;
-  --text: #463d33;
-  --text-strong: #1f1913;
-  --muted: #695d4f;
-  --rule: #d9ccb6;
+  /* Grounds. A real tonal ladder: bone is the page, white is a mount lifted off it,
+     so elevation reads from the step in tone before any shadow is drawn. */
+  --ink: #130f0b;
+  --ink-2: #1b1610;
+  --ink-3: #241d16;
+  --bone: #f1ebdf;
+  --stone: #e6dac6;
+  --stone-2: #d6c6a9;
+  --white: #fffcf5;
+  --text: #4a4036;
+  --text-strong: #191410;
+  /* Dark enough to clear AA on the stone ground as well as on bone (4.6:1 / 5.4:1). */
+  --muted: #655949;
+  --rule: #d5c7ae;
   --rule-dark: #3a3027;
-  --on-ink: #e9e0d1;
-  --on-ink-2: #bcb09e;
-  --on-ink-3: #9c9080;
-  --brass: #85571d;
-  --brass-2: #96631f;
-  --champ: #e8cf9f;
-  --focus: #85571d;
+  --on-ink: #ece3d4;
+  --on-ink-2: #bfb3a0;
+  --on-ink-3: #9d9181;
+  /* Brass carries more chroma than the old #85571d and still clears AA on white (4.9:1). */
+  --brass: #9a6522;
+  --brass-d: #7d5018;
+  --brass-2: #b07f36;
+  --champ: #ecd5a7;
+  --focus: #9a6522;
 
   --sans: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --serif: "Fraunces", Georgia, "Times New Roman", serif;
@@ -35,7 +41,7 @@
   --fs-body: clamp(1rem, 0.94rem + 0.22vw, 1.125rem);
   --fs-sm: 0.875rem;
   --fs-xs: 0.75rem;
-  --fs-h2: clamp(2.5rem, 1.35rem + 4.3vw, 5.6rem);
+  --fs-h2: clamp(2.75rem, 1.3rem + 5.2vw, 6.4rem);
   --fs-h3: clamp(1.5rem, 1.1rem + 1.2vw, 2.4rem);
 
   --pad: max(16px, 1.74vw);
@@ -47,8 +53,10 @@
   --ease-ui: cubic-bezier(.23, 1, .32, 1);
   --ease-io: cubic-bezier(.77, 0, .175, 1);
 
-  --shadow-plate: 0 1px 2px rgba(31, 25, 19, .08), 0 18px 32px -18px rgba(31, 25, 19, .42), 0 48px 72px -40px rgba(31, 25, 19, .34);
-  --shadow-plate-hover: 0 2px 4px rgba(31, 25, 19, .1), 0 28px 44px -20px rgba(31, 25, 19, .5), 0 64px 90px -44px rgba(31, 25, 19, .4);
+  /* Depth is a tight contact shadow plus a wide ambient one, both warm rather than
+     neutral grey, so photographs sit on the paper instead of floating over it. */
+  --shadow-plate: 0 1px 1px rgba(45, 32, 16, .07), 0 3px 6px -2px rgba(45, 32, 16, .1), 0 14px 24px -12px rgba(45, 32, 16, .26), 0 44px 64px -34px rgba(45, 32, 16, .34);
+  --shadow-plate-hover: 0 1px 1px rgba(45, 32, 16, .08), 0 5px 10px -3px rgba(45, 32, 16, .13), 0 24px 38px -16px rgba(45, 32, 16, .32), 0 70px 90px -40px rgba(45, 32, 16, .42);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -83,19 +91,22 @@ em { font-style: italic; font-weight: 300; }
 
 /* ---------- Shared pieces ---------- */
 .wm { display: inline-block; font-size: 15px; font-weight: 500; letter-spacing: .34em; margin-right: -.34em; text-transform: uppercase; line-height: 1; }
-.h-sec { font-family: var(--serif); font-weight: 300; font-size: var(--fs-h2); line-height: 1.02; letter-spacing: -.028em; color: var(--text-strong); font-variation-settings: "SOFT" 40, "WONK" 0; }
-.h-sec em { color: var(--brass); font-variation-settings: "SOFT" 100, "WONK" 1; }
+/* Fraunces is held at its display optical size so the hairlines stay fine and the
+   stroke contrast stays high; SOFT is pulled down for crisper terminals at this scale. */
+.h-sec { font-family: var(--serif); font-weight: 300; font-size: var(--fs-h2); line-height: 1.02; letter-spacing: -.034em; color: var(--text-strong); font-variation-settings: "opsz" 144, "SOFT" 16, "WONK" 0; }
+.h-sec em { color: var(--brass); letter-spacing: -.024em; font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1; }
 
-.btn { display: inline-flex; align-items: center; justify-content: center; gap: .6em; min-height: 48px; padding: 0 1.7em; border-radius: 999px; font-size: 15px; font-weight: 500; white-space: nowrap; transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease, background-position 400ms var(--ease), transform 120ms ease; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .6em; min-height: 48px; padding: 0 1.7em; border-radius: 999px; font-size: 15px; font-weight: 500; white-space: nowrap; transition: background-color 220ms var(--ease-ui), color 220ms var(--ease-ui), border-color 220ms var(--ease-ui), box-shadow 320ms var(--ease), transform 120ms ease; }
 .btn:active { transform: scale(.97); }
 .btn--sm { min-height: 44px; padding: 0 1.4em; font-size: 14px; }
-.btn--gold { color: #fff; background: linear-gradient(90deg, var(--brass), var(--brass-2)); background-size: 200% 100%; }
-.btn--ghost { color: #fff; border: 1px solid rgba(255, 255, 255, .55); }
+/* Solid brass with a lit top edge and its own warm cast, so the action has weight. */
+.btn--gold { color: #fff; background: var(--brass); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .22), 0 1px 2px rgba(45, 32, 16, .24), 0 10px 20px -9px rgba(122, 79, 24, .55); }
+.btn--ghost { color: #fff; border: 1px solid rgba(255, 255, 255, .5); }
 .btn--call { min-height: 64px; padding: 0 2.2em; font-size: 18px; color: #fff; border: 1px solid var(--champ); }
 @media (hover: hover) and (pointer: fine) {
-  .btn--gold:hover { background-position: 100% 0; }
+  .btn--gold:hover { background: var(--brass-d); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .22), 0 1px 2px rgba(45, 32, 16, .28), 0 16px 28px -10px rgba(122, 79, 24, .66); }
   .btn--ghost:hover { background: rgba(255, 255, 255, .12); border-color: #fff; }
-  .btn--call:hover { background: var(--champ); color: var(--ink); }
+  .btn--call:hover { background: var(--champ); color: var(--ink); box-shadow: 0 18px 36px -14px rgba(236, 213, 167, .5); }
 }
 .tlink { display: inline-flex; align-items: center; gap: .6em; min-height: 44px; font-size: clamp(1rem, .9rem + .4vw, 1.2rem); color: var(--text-strong); background: linear-gradient(var(--brass), var(--brass)) left calc(50% + .9em) / 100% 1px no-repeat; background-size: 0 1px; transition: background-size 320ms var(--ease-ui); }
 .tlink span { color: var(--brass); transition: transform 240ms var(--ease-ui); }
@@ -170,11 +181,11 @@ html:not(.js) .minibar { display: none; }
 html.menu-open { overflow: hidden; }
 
 /* ---------- Hero ---------- */
-.hero { position: relative; display: flex; flex-direction: column; min-height: 100svh; background: radial-gradient(120% 70% at 50% 0%, #2a2118 0%, var(--ink) 62%); color: #fff; overflow: hidden; }
-.hero__ambient { position: absolute; inset: 0; pointer-events: none; z-index: 1; background: radial-gradient(ellipse 760px 500px at var(--hero-mouse-x, 50%) var(--hero-mouse-y, 40%), rgba(232, 207, 159, .1) 0%, rgba(133, 87, 29, .04) 45%, transparent 72%); will-change: background; }
+.hero { position: relative; display: flex; flex-direction: column; min-height: 100svh; background: radial-gradient(125% 72% at 50% -4%, #31261a 0%, #1e1812 42%, var(--ink) 74%); color: #fff; overflow: hidden; }
+.hero__ambient { position: absolute; inset: 0; pointer-events: none; z-index: 1; background: radial-gradient(ellipse 820px 540px at var(--hero-mouse-x, 50%) var(--hero-mouse-y, 40%), rgba(236, 213, 167, .13) 0%, rgba(154, 101, 34, .05) 45%, transparent 72%); will-change: background; }
 .hero__copy { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; text-align: center; padding: max(104px, 13svh) var(--pad) max(36px, 5svh); }
-.hero__title { font-family: var(--serif); font-weight: 300; font-size: clamp(2.75rem, min(7.4vw, 8.4svh), 7.25rem); line-height: .98; letter-spacing: -.035em; color: #fff; font-variation-settings: "SOFT" 30, "WONK" 0; }
-.hero__title em { color: var(--champ); font-variation-settings: "SOFT" 100, "WONK" 1; }
+.hero__title { font-family: var(--serif); font-weight: 300; font-size: clamp(2.75rem, min(7.6vw, 8.6svh), 7.5rem); line-height: .97; letter-spacing: -.04em; color: #fff; font-variation-settings: "opsz" 144, "SOFT" 14, "WONK" 0; text-shadow: 0 1px 40px rgba(0, 0, 0, .3); }
+.hero__title em { color: var(--champ); letter-spacing: -.028em; font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1; }
 .hero__line { display: block; overflow: hidden; padding-bottom: .16em; margin-bottom: -.16em; }
 .hero__in { display: inline-block; white-space: nowrap; transform: translate3d(0, 0, 0); }
 .hero__blurb { margin-top: max(20px, 2.8svh); max-width: 44ch; font-size: clamp(1rem, .9rem + .45vw, 1.25rem); font-weight: 300; line-height: 1.5; color: rgba(255, 255, 255, .88); }
@@ -206,8 +217,10 @@ html.menu-open { overflow: hidden; }
 .studio__head { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; padding: 0 var(--gx); }
 .studio__title { max-width: 15ch; font-size: clamp(2.4rem, 1.2rem + 4vw, 5.2rem); }
 .rail { display: flex; align-items: flex-start; justify-content: space-between; gap: 1.4vw; padding: 0 var(--gx); margin-top: clamp(40px, 5vw, 88px); }
-.rail__p { flex: none; overflow: hidden; border-radius: 3px; background: var(--stone-2); box-shadow: var(--shadow-plate); aspect-ratio: 3 / 4; }
+.rail__p { position: relative; flex: none; overflow: hidden; border-radius: 3px; background: var(--stone-2); box-shadow: var(--shadow-plate); aspect-ratio: 3 / 4; }
 .rail__p img { width: 100%; height: 100%; object-fit: cover; }
+/* A hairline mount and a lit top edge: the photograph sits in paper, not on it. */
+.rail__p::after, .plate::after { content: ""; position: absolute; inset: 0; pointer-events: none; border-radius: inherit; box-shadow: inset 0 0 0 1px rgba(45, 32, 16, .11), inset 0 1px 0 rgba(255, 253, 246, .2); }
 .rail__p--lotus { width: 15vw; aspect-ratio: 9 / 16; }
 .rail__p:nth-child(2) { width: 19vw; margin-top: 4vw; }
 .rail__p:nth-child(3) { width: 21vw; }
@@ -215,8 +228,23 @@ html.menu-open { overflow: hidden; }
 .rail__p:nth-child(5) { width: 14vw; margin-top: 2vw; }
 .studio__note { padding: 0 var(--gx); margin-top: clamp(28px, 3vw, 48px); font-size: var(--fs-sm); color: var(--muted); }
 
+/* ---------- Statement: a dark beat between the two paper galleries. Words warm from
+   dim to lit as the line is read; main.js adds .is-lit word by word on scroll. ---------- */
+.credo { position: relative; padding: clamp(104px, 15vw, 236px) var(--gx); background: var(--ink); color: var(--on-ink); overflow: hidden; isolation: isolate; }
+.credo__glow { position: absolute; left: 50%; top: 50%; width: min(132%, 1120px); aspect-ratio: 2 / 1; transform: translate(-50%, -50%); background: radial-gradient(closest-side, rgba(154, 101, 34, .3), transparent 72%); pointer-events: none; z-index: -1; }
+.credo__text { max-width: 19ch; margin: 0 auto; text-align: center; font-family: var(--serif); font-weight: 300; font-size: clamp(2rem, 1rem + 4.4vw, 5rem); line-height: 1.1; letter-spacing: -.032em; font-variation-settings: "opsz" 144, "SOFT" 20, "WONK" 0; }
+.credo__text em { color: var(--champ); font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1; }
+.credo__text .w__i { color: rgba(236, 227, 212, .3); transition: color 700ms var(--ease); }
+.credo__text .w__i.is-lit { color: var(--on-ink); }
+.credo__text em .w__i { color: rgba(236, 213, 167, .32); }
+.credo__text em .w__i.is-lit { color: var(--champ); }
+.credo__note { margin: clamp(28px, 3vw, 44px) auto 0; max-width: 46ch; text-align: center; font-size: var(--fs-sm); color: var(--on-ink-3); }
+
 /* ---------- Selected work ---------- */
 .work { background: var(--stone); padding: var(--section) var(--gx); position: relative; }
+/* Where one paper plane meets the next, a soft edge shows the step between them. */
+.work::before, .details::before { content: ""; position: absolute; inset: 0 0 auto; height: clamp(64px, 9vw, 150px); background: linear-gradient(rgba(45, 32, 16, .06), rgba(45, 32, 16, 0)); pointer-events: none; z-index: 0; }
+.work > *, .details > * { position: relative; z-index: 1; }
 .work__head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--gap); align-items: end; margin-bottom: clamp(56px, 8vw, 128px); }
 .work__title { grid-column: 1 / span 7; }
 .work__lede { grid-column: 9 / span 4; font-size: var(--fs-body); color: var(--muted); max-width: 36ch; padding-bottom: .6em; }
