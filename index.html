@@ -1,0 +1,611 @@
+﻿<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aayaadi Designs | Interior design studio, Gurugram (independent concept)</title>
+<meta name="description" content="An independent one-page website concept for Aayaadi Designs, a Gurugram interior design studio. It shows the studio's public photographs of real rooms and makes it easy to call or message the studio. Not the studio's official website.">
+<!-- Private concept preview: keep it out of search results -->
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="theme-color" content="#17130f">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/aayaadi/web/aayaadi-kf04-dining-wide-ai-edit-1440.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:title" content="Aayaadi Designs | Website concept (unofficial)">
+<meta property="og:description" content="An independent website concept prepared for discussion with Aayaadi Designs. Not the studio's official website.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2317130f'/%3E%3Ctext x='16' y='22.5' font-family='Georgia,serif' font-size='19' fill='%23e8cf9f' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="fonts/fraunces/Fraunces-VF.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="fonts/geist/Geist-VF.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+<div class="page-grain" aria-hidden="true"></div>
+<!-- hero-intro: the hero starts in its pre-entrance state only when JS runs and motion is allowed;
+     main.js plays the entrance and removes the class, or the failsafe removes it after 4 s -->
+<script>(function(d){d.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('hero-intro');setTimeout(function(){if(!window.__siteBooted)d.classList.remove('hero-intro');},4000);}})(document.documentElement);</script>
+
+<a class="skip" href="#studio">Skip to content</a>
+
+<!-- Compact bar: slides in on scroll-up once past the hero. visibility:hidden until shown, so it is never focusable while out of view. -->
+<nav class="minibar" aria-label="Quick">
+  <a class="minibar__logo" href="#top" aria-label="Aayaadi Designs, back to top"><span class="wm">Aayaadi</span></a>
+  <div class="minibar__links">
+    <a href="#studio">Studio</a>
+    <a href="#work">Work</a>
+    <a href="#themes">Pillars</a>
+    <a href="#details">Closer looks</a>
+    <a href="#design">Design</a>
+    <a href="#process">Process</a>
+    <a href="#faq">Questions</a>
+  </div>
+  <button class="menubtn" type="button" data-menu-open aria-expanded="false" aria-controls="menu">Menu</button>
+  <a class="btn btn--gold btn--sm minibar__cta" href="#enquire">Enquire</a>
+</nav>
+
+<!-- Phone call bar: thumb-reach primary action, phones only. Shown after the hero, hidden once the enquiry section is in view (main.js). -->
+<a class="callbar" href="tel:+919873747198" aria-label="Call the studio on +91 98737 47198" tabindex="-1">
+  <span class="callbar__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+  Call the studio
+</a>
+
+<!-- Menu panel -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu" hidden>
+  <div class="menu__scrim" data-menu-close></div>
+  <div class="menu__sheet">
+    <button class="menu__close" type="button" data-menu-close aria-label="Close menu"><span aria-hidden="true"></span></button>
+    <a class="btn btn--gold menu__enquire" href="#enquire" data-menu-link>Enquire</a>
+    <ul class="menu__list">
+      <li><a href="#studio" data-menu-link>Studio</a></li>
+      <li><a href="#work" data-menu-link>Work</a></li>
+      <li><a href="#themes" data-menu-link>Pillars</a></li>
+      <li><a href="#details" data-menu-link>Closer looks</a></li>
+      <li><a href="#design" data-menu-link>Design your room</a></li>
+      <li><a href="#process" data-menu-link>Process</a></li>
+      <li><a href="#faq" data-menu-link>Questions</a></li>
+      <li><a href="#enquire" data-menu-link>Enquire</a></li>
+    </ul>
+    <div class="menu__foot">
+      <a href="tel:+919873747198">Call +91&nbsp;98737&nbsp;47198</a>
+      <a href="https://www.instagram.com/aayaadi_designs/" target="_blank" rel="noopener">Instagram @aayaadi_designs</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <div class="hero__ambient" aria-hidden="true"></div>
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__logo" href="#top" aria-label="Aayaadi Designs, back to top"><span class="wm">Aayaadi</span></a>
+      <p class="nav__note">Independent concept, not the studio's official site</p>
+      <div class="nav__right">
+        <a class="btn btn--gold btn--sm nav__cta" href="#enquire" data-magnetic>Enquire</a>
+        <button class="menubtn" type="button" data-menu-open aria-expanded="false" aria-controls="menu">Menu</button>
+      </div>
+    </nav>
+
+    <div class="hero__copy">
+      <h1 class="hero__title">
+        <span class="sr-only">Aayaadi Designs: </span>
+        <span class="hero__line"><span class="hero__in" data-hero="line">Interior design,</span></span>
+        <span class="hero__line"><span class="hero__in" data-hero="line">shaped around</span></span>
+        <span class="hero__line"><span class="hero__in" data-hero="line"><em>living</em>.</span></span>
+      </h1>
+      <p class="hero__blurb" data-hero="fade">Homes designed room by room, from the first layout and joinery to stone, light and the last brass handle.</p>
+      <div class="hero__actions" data-hero="fade">
+        <a class="btn btn--gold" href="tel:+919873747198" data-magnetic>Call the studio</a>
+        <a class="btn btn--ghost" href="#work" data-magnetic>See selected work <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+
+    <div class="hero__strip" aria-label="Rooms from the studio's public photographs">
+      <figure class="sp sp--living" data-hero="panel">
+        <img src="img/aayaadi/web/aayaadi-google-01-photo-800.webp" width="800" height="1067" alt="Living room with a large veined stone-look panel framed by fluted panels and a pale sectional sofa" fetchpriority="high" decoding="async">
+      </figure>
+      <figure class="sp sp--dining" data-hero="panel">
+        <!-- AI-edited image supplied by the owner (Gemini mark, bottom right, kept visible): see AI-INVENTED.md -->
+        <img src="img/aayaadi/web/aayaadi-kf04-dining-wide-ai-edit-1440.webp" srcset="img/aayaadi/web/aayaadi-kf04-dining-wide-ai-edit-960.webp 960w, img/aayaadi/web/aayaadi-kf04-dining-wide-ai-edit-1440.webp 1440w, img/aayaadi/web/aayaadi-kf04-dining-wide-ai-edit-1920.webp 1920w, img/aayaadi/web/aayaadi-kf04-dining-wide-ai-edit-2752.webp 2752w" sizes="(max-width: 760px) 90vw, 60vw" width="2752" height="1536" fetchpriority="high" decoding="async" alt="Dining room with a veined marble table, six blue and grey tub chairs, white fluted cabinetry with brass handles and a lit tray ceiling, with the kitchen seen through a wide opening">
+        <figcaption class="sp__cap sp__cap--left"><span>Dining room</span><small>Marble, brass · AI-edited image</small></figcaption>
+      </figure>
+      <figure class="sp sp--bed" data-hero="panel">
+        <img src="img/aayaadi/web/aayaadi-google-19-photo-800.webp" srcset="img/aayaadi/web/aayaadi-google-19-photo-480.webp 480w, img/aayaadi/web/aayaadi-google-19-photo-800.webp 800w, img/aayaadi/web/aayaadi-google-19-photo-1200.webp 1200w" sizes="(max-width: 760px) 30vw, 34vw" width="1200" height="1600" alt="Bedroom with a rounded upholstered headboard, pink and grey bedding and a backlit wooden slat panel above the bed" fetchpriority="high" decoding="async">
+        <figcaption class="sp__cap"><span>Bedroom</span><small>Slat panel</small></figcaption>
+      </figure>
+      <figure class="sp sp--kitchen" data-hero="panel">
+        <img src="img/aayaadi/web/aayaadi-google-13-photo-800.webp" srcset="img/aayaadi/web/aayaadi-google-13-photo-480.webp 480w, img/aayaadi/web/aayaadi-google-13-photo-800.webp 800w" sizes="(max-width: 760px) 32vw, 20vw" width="1200" height="1600" alt="Kitchen with sage-green cabinets and a fluted wooden counter, seen through a dark timber door frame" fetchpriority="high" decoding="async">
+        <figcaption class="sp__cap"><span>Kitchen</span><small>Fluted timber</small></figcaption>
+      </figure>
+    </div>
+  </header>
+
+  <!-- ============ STUDIO STATEMENT ============ -->
+  <section class="studio" id="studio" aria-labelledby="studio-title">
+    <div class="studio__head">
+      <h2 class="h-sec studio__title" id="studio-title" data-split>Rooms shaped around the way people <em>actually live</em>.</h2>
+      <a class="tlink" href="#work" data-rv="rise">See selected work <span aria-hidden="true">→</span></a>
+    </div>
+    <ul class="rail" aria-label="Finishes from the studio's public photographs">
+      <li class="rail__p rail__p--lotus" data-rv="wipe" data-parallax="0.04"><img src="img/aayaadi/web/aayaadi-google-02-video-poster-480.webp" srcset="img/aayaadi/web/aayaadi-google-02-video-poster-240.webp 240w, img/aayaadi/web/aayaadi-google-02-video-poster-480.webp 480w, img/aayaadi/web/aayaadi-google-02-video-poster-800.webp 800w" sizes="(max-width: 760px) 40vw, 21vw" width="800" height="1422" loading="lazy" decoding="async" alt="Gold lotus-shaped centrepiece on a round cream stone-look table, with a sofa and grey cushions behind"></li>
+      <li class="rail__p" data-rv="wipe" data-delay="80" data-parallax="-0.05"><img src="img/aayaadi/web/aayaadi-google-07-photo-480.webp" srcset="img/aayaadi/web/aayaadi-google-07-photo-240.webp 240w, img/aayaadi/web/aayaadi-google-07-photo-480.webp 480w, img/aayaadi/web/aayaadi-google-07-photo-800.webp 800w" sizes="(max-width: 760px) 62vw, 28vw" width="800" height="1067" loading="lazy" decoding="async" alt="Cream fluted wardrobes with arched grooves framing a walnut-finish TV panel"></li>
+      <li class="rail__p" data-rv="wipe" data-delay="160" data-parallax="0.03"><img src="img/aayaadi/web/aayaadi-google-17-photo-480.webp" srcset="img/aayaadi/web/aayaadi-google-17-photo-240.webp 240w, img/aayaadi/web/aayaadi-google-17-photo-480.webp 480w, img/aayaadi/web/aayaadi-google-17-photo-800.webp 800w" sizes="(max-width: 760px) 62vw, 28vw" width="800" height="1067" loading="lazy" decoding="async" alt="Backlit amber stone-look wall and counter over a white fluted cabinet"></li>
+      <li class="rail__p" data-rv="wipe" data-delay="240" data-parallax="-0.07"><img src="img/aayaadi/web/aayaadi-google-13-photo-480.webp" srcset="img/aayaadi/web/aayaadi-google-13-photo-480.webp 480w, img/aayaadi/web/aayaadi-google-13-photo-800.webp 800w" sizes="(max-width: 760px) 62vw, 26vw" width="800" height="1067" loading="lazy" decoding="async" alt="Kitchen with sage-green cabinets and a fluted wooden counter, seen through a dark timber door frame"></li>
+      <li class="rail__p" data-rv="wipe" data-delay="320" data-parallax="0.05"><img src="img/aayaadi/web/aayaadi-google-10-photo-800.webp" width="800" height="1067" loading="lazy" decoding="async" sizes="(max-width: 760px) 62vw, 21vw" alt="Grey wardrobe shutters with inlaid concentric lines and long black handles"></li>
+    </ul>
+    <p class="studio__note">Photographs from Aayaadi Designs' public Google listing. Project names are not confirmed.</p>
+  </section>
+
+  <!-- ============ SELECTED WORK ============ -->
+  <section class="work" id="work" aria-labelledby="work-title">
+    <div class="work__head">
+      <h2 class="h-sec work__title" id="work-title" data-split>Selected <em>work</em></h2>
+      <p class="work__lede" data-rv="rise">Four spaces from the studio's public photographs. Project names and details are not confirmed.</p>
+    </div>
+
+    <article class="wk" data-room="Dining room" data-num="(01)" data-tags="Geometric table · Cove light · Panelling">
+      <div class="wk__col wk__col--a">
+        <button class="plate" type="button" data-rv="wipe" aria-label="Open photograph 1 of Dining room"><img src="img/aayaadi/web/aayaadi-google-31-photo-800.webp" srcset="img/aayaadi/web/aayaadi-google-31-photo-480.webp 480w, img/aayaadi/web/aayaadi-google-31-photo-800.webp 800w, img/aayaadi/web/aayaadi-google-31-photo-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 40vw" data-full="img/aayaadi/web/aayaadi-google-31-photo-1200.webp" width="1200" height="1600" loading="lazy" decoding="async" alt="Dining table with a black-and-white geometric top and curved tub chairs, in front of a panelled wall edged with warm cove lighting"><span class="plate__view" aria-hidden="true">View</span></button>
+        <div class="wk__meta" data-rv="rise"><span class="wk__num">01</span><h3>Dining room</h3><p>Geometric table · Cove light · Panelling</p></div>
+      </div>
+      <div class="wk__col wk__col--b" data-parallax="-0.06">
+        <button class="plate" type="button" data-rv="wipe" data-delay="120" aria-label="Open photograph 2 of Dining room"><img src="img/aayaadi/web/aayaadi-google-05-photo-800.webp" srcset="img/aayaadi/web/aayaadi-google-05-photo-480.webp 480w, img/aayaadi/web/aayaadi-google-05-photo-800.webp 800w, img/aayaadi/web/aayaadi-google-05-photo-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 40vw" data-full="img/aayaadi/web/aayaadi-google-05-photo-1200.webp" width="1200" height="1600" loading="lazy" decoding="async" alt="Dining area with a white-and-black veined table and blue-and-grey upholstered chairs, with the kitchen visible through a wide opening"><span class="plate__view" aria-hidden="true">View</span></button>
+      </div>
+    </article>
+
+    <article class="wk wk--flip" data-room="Bedroom" data-num="(02)" data-tags="Rounded headboard · Slat panel · Carved bed">
+      <div class="wk__col wk__col--a">
+        <button class="plate" type="button" data-rv="wipe" aria-label="Open photograph 1 of Bedroom"><img src="img/aayaadi/web/aayaadi-google-19-photo-800.webp" srcset="img/aayaadi/web/aayaadi-google-19-photo-480.webp 480w, img/aayaadi/web/aayaadi-google-19-photo-800.webp 800w, img/aayaadi/web/aayaadi-google-19-photo-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 40vw" data-full="img/aayaadi/web/aayaadi-google-19-photo-1200.webp" width="1200" height="1600" loading="lazy" decoding="async" alt="Bedroom with a rounded upholstered headboard, pink and grey bedding and a backlit wooden slat panel above the bed"><span class="plate__view" aria-hidden="true">View</span></button>
+        <div class="wk__meta" data-rv="rise"><span class="wk__num">02</span><h3>Bedroom</h3><p>Rounded headboard · Slat panel · Carved bed</p></div>
+      </div>
+      <div class="wk__col wk__col--b" data-parallax="-0.06">
+        <button class="plate" type="button" data-rv="wipe" data-delay="120" aria-label="Open photograph 2 of Bedroom"><img src="img/aayaadi/web/aayaadi-google-06-photo-800.webp" srcset="img/aayaadi/web/aayaadi-google-06-photo-480.webp 480w, img/aayaadi/web/aayaadi-google-06-photo-800.webp 800w, img/aayaadi/web/aayaadi-google-06-photo-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 40vw" data-full="img/aayaadi/web/aayaadi-google-06-photo-1200.webp" width="1200" height="1600" loading="lazy" decoding="async" alt="Bedroom with a carved white bed and a tufted brown headboard, framed by moulded wall panels and crystal wall lights"><span class="plate__view" aria-hidden="true">View</span></button>
+      </div>
+    </article>
+
+    <article class="wk" data-room="Wardrobes" data-num="(03)" data-tags="Fluted arches · Walnut panel · Inlaid lines">
+      <div class="wk__col wk__col--a">
+        <button class="plate" type="button" data-rv="wipe" aria-label="Open photograph 1 of Wardrobes"><img src="img/aayaadi/web/aayaadi-google-07-photo-800.webp" srcset="img/aayaadi/web/aayaadi-google-07-photo-480.webp 480w, img/aayaadi/web/aayaadi-google-07-photo-800.webp 800w, img/aayaadi/web/aayaadi-google-07-photo-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 40vw" data-full="img/aayaadi/web/aayaadi-google-07-photo-1200.webp" width="1200" height="1600" loading="lazy" decoding="async" alt="Cream fluted wardrobes with arched grooves framing a walnut-finish TV panel"><span class="plate__view" aria-hidden="true">View</span></button>
+        <div class="wk__meta" data-rv="rise"><span class="wk__num">03</span><h3>Wardrobes</h3><p>Fluted arches · Walnut panel · Inlaid lines</p></div>
+      </div>
+      <div class="wk__col wk__col--b" data-parallax="-0.06">
+        <button class="plate" type="button" data-rv="wipe" data-delay="120" aria-label="Open photograph 2 of Wardrobes"><img src="img/aayaadi/web/aayaadi-google-10-photo-800.webp" width="800" height="1067" sizes="(max-width: 760px) 100vw, 40vw" data-full="img/aayaadi/web/aayaadi-google-10-photo-800.webp" loading="lazy" decoding="async" alt="Grey wardrobe shutters with inlaid concentric lines and long black handles"><span class="plate__view" aria-hidden="true">View</span></button>
+      </div>
+    </article>
+
+    <article class="wk wk--solo wk--flip" data-room="Study" data-num="(04)" data-tags="Shared desk · Lit shelving · Herringbone floor">
+      <div class="wk__col wk__col--a">
+        <button class="plate" type="button" data-rv="wipe" aria-label="Open photograph of Study"><img src="img/aayaadi/web/aayaadi-google-16-photo-800.webp" srcset="img/aayaadi/web/aayaadi-google-16-photo-480.webp 480w, img/aayaadi/web/aayaadi-google-16-photo-800.webp 800w, img/aayaadi/web/aayaadi-google-16-photo-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 40vw" data-full="img/aayaadi/web/aayaadi-google-16-photo-1200.webp" width="1200" height="1600" loading="lazy" decoding="async" alt="Study with a shared desk for two, office chairs, white cabinets and a herringbone-pattern floor"><span class="plate__view" aria-hidden="true">View</span></button>
+      </div>
+      <div class="wk__meta wk__meta--solo" data-rv="rise"><span class="wk__num">04</span><h3>Study</h3><p>Shared desk · Lit shelving · Herringbone floor</p></div>
+    </article>
+
+    <a class="tlink work__next" href="#themes">See the four pillars <span aria-hidden="true">→</span></a>
+  </section>
+
+  <!-- ============ THEMES: FOUR PILLARS ============ -->
+  <section class="themes" id="themes" aria-labelledby="themes-title">
+    <div class="themes__stage">
+      <div class="themes__content">
+        <h2 class="h-sec themes__title" id="themes-title" data-split>Four pillars of <em>architectural harmony</em>.</h2>
+        <p class="themes__hint" data-rv="rise">The same four ideas run through every room. Choose one to see it in the studio's own photographs.</p>
+
+        <ul class="themes__list" role="tablist" aria-label="Four pillars" data-rv="rise" data-delay="80">
+          <li class="theme" role="presentation">
+            <button class="theme__btn is-active" type="button" role="tab" id="tab-theme-0" aria-selected="true" aria-controls="panel-theme-0" data-theme="0">
+              <span class="theme__mark" aria-hidden="true"></span>
+              <span class="theme__body">
+                <span class="theme__name">Form</span>
+                <span class="theme__desc">Proportion, fluted wardrobes and arched joinery</span>
+              </span>
+            </button>
+          </li>
+          <li class="theme" role="presentation">
+            <button class="theme__btn" type="button" role="tab" id="tab-theme-1" aria-selected="false" aria-controls="panel-theme-1" data-theme="1">
+              <span class="theme__mark" aria-hidden="true"></span>
+              <span class="theme__body">
+                <span class="theme__name">Material</span>
+                <span class="theme__desc">Veined stone-look panels against fluted timber</span>
+              </span>
+            </button>
+          </li>
+          <li class="theme" role="presentation">
+            <button class="theme__btn" type="button" role="tab" id="tab-theme-2" aria-selected="false" aria-controls="panel-theme-2" data-theme="2">
+              <span class="theme__mark" aria-hidden="true"></span>
+              <span class="theme__body">
+                <span class="theme__name">Light</span>
+                <span class="theme__desc">A backlit amber wall and warm cove lighting</span>
+              </span>
+            </button>
+          </li>
+          <li class="theme" role="presentation">
+            <button class="theme__btn" type="button" role="tab" id="tab-theme-3" aria-selected="false" aria-controls="panel-theme-3" data-theme="3">
+              <span class="theme__mark" aria-hidden="true"></span>
+              <span class="theme__body">
+                <span class="theme__name">Detail</span>
+                <span class="theme__desc">Inlaid shutter lines and long black handles</span>
+              </span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="themes__exhibition" data-rv="fade">
+        <div class="themes__frame" aria-live="polite">
+          <div class="themes__photo-wrap">
+            <img class="is-on" id="panel-theme-0" role="tabpanel" aria-labelledby="tab-theme-0" src="img/aayaadi/web/aayaadi-google-07-photo-1200.webp" srcset="img/aayaadi/web/aayaadi-google-07-photo-480.webp 480w, img/aayaadi/web/aayaadi-google-07-photo-800.webp 800w, img/aayaadi/web/aayaadi-google-07-photo-1200.webp 1200w" sizes="(max-width: 760px) 94vw, 40vw" width="1200" height="1600" loading="lazy" decoding="async" alt="Form: cream fluted wardrobes with arched grooves framing a walnut-finish TV panel">
+            <img id="panel-theme-1" role="tabpanel" aria-labelledby="tab-theme-1" src="img/aayaadi/web/aayaadi-google-01-photo-800.webp" width="800" height="1067" loading="lazy" decoding="async" alt="Material: living room with a large veined stone-look panel framed by fluted panels and a pale sectional sofa">
+            <img id="panel-theme-2" role="tabpanel" aria-labelledby="tab-theme-2" src="img/aayaadi/web/aayaadi-google-17-photo-1200.webp" srcset="img/aayaadi/web/aayaadi-google-17-photo-480.webp 480w, img/aayaadi/web/aayaadi-google-17-photo-800.webp 800w, img/aayaadi/web/aayaadi-google-17-photo-1200.webp 1200w" sizes="(max-width: 760px) 94vw, 40vw" width="1200" height="1600" loading="lazy" decoding="async" alt="Light: backlit amber stone-look wall and counter over a white fluted cabinet">
+            <img id="panel-theme-3" role="tabpanel" aria-labelledby="tab-theme-3" src="img/aayaadi/web/aayaadi-google-10-photo-800.webp" width="800" height="1067" loading="lazy" decoding="async" alt="Detail: grey wardrobe shutters with inlaid concentric lines and long black handles">
+          </div>
+        </div>
+        <div class="themes__caption">
+          <div class="themes__cap-head">
+            <span class="themes__tag" id="themes-cap-tag">Form</span>
+            <span class="themes__count" id="themes-cap-count" aria-hidden="true">1 / 4</span>
+          </div>
+          <p class="themes__text" id="themes-cap-text">Cream fluted wardrobes with arched grooves framing a walnut-finish TV panel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DETAILS: CLOSER LOOKS ============ -->
+  <section class="details" id="details" aria-labelledby="details-title">
+    <div class="details__grid" data-looks>
+      <div class="details__side">
+        <h2 class="h-sec" id="details-title" data-split>Closer <em>looks</em></h2>
+        <p class="details__lede" data-rv="rise">Three details, each beside the room it belongs to. On a desktop, hover a photograph to look closer.</p>
+        <div class="looks-nav" role="tablist" aria-label="Closer looks" data-rv="rise" data-delay="80">
+          <button class="looks-nav__btn is-active" type="button" role="tab" aria-selected="true" data-look="0">
+            <span class="looks-nav__num" aria-hidden="true">01</span>
+            <span class="looks-nav__name">Centrepiece</span>
+          </button>
+          <button class="looks-nav__btn" type="button" role="tab" aria-selected="false" data-look="1">
+            <span class="looks-nav__num" aria-hidden="true">02</span>
+            <span class="looks-nav__name">Panelling</span>
+          </button>
+          <button class="looks-nav__btn" type="button" role="tab" aria-selected="false" data-look="2">
+            <span class="looks-nav__num" aria-hidden="true">03</span>
+            <span class="looks-nav__name">Framing</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="looks" aria-roledescription="carousel" aria-label="Closer looks" data-rv="fade">
+        <figure class="look is-on" aria-roledescription="slide" aria-label="1 of 3" style="--pos: 50% 74%; --o: 50% 78%">
+          <div class="look__frame">
+            <img class="look__img" src="img/aayaadi/web/aayaadi-google-02-video-poster-1152.webp" srcset="img/aayaadi/web/aayaadi-google-02-video-poster-800.webp 800w, img/aayaadi/web/aayaadi-google-02-video-poster-1152.webp 1152w" sizes="(max-width: 760px) 100vw, 62vw" width="1152" height="2048" loading="lazy" decoding="async" alt="Gold lotus-shaped centrepiece on a round cream stone-look table, with a sofa and grey cushions behind">
+            <div class="loupe" aria-hidden="true"></div>
+          </div>
+          <div class="look__side">
+            <div class="look__inset" aria-hidden="true"><img src="img/aayaadi/web/aayaadi-google-02-video-poster-800.webp" width="800" height="1422" loading="lazy" decoding="async" alt=""></div>
+            <figcaption class="look__cap"><h3>Centrepiece</h3><p>Gold lotus centrepiece · Cream stone-look table · Warm ambient light</p></figcaption>
+          </div>
+        </figure>
+
+        <figure class="look" aria-roledescription="slide" aria-label="2 of 3" style="--pos: 50% 30%; --o: 50% 30%">
+          <div class="look__frame">
+            <img class="look__img" src="img/aayaadi/web/aayaadi-google-06-photo-1200.webp" srcset="img/aayaadi/web/aayaadi-google-06-photo-800.webp 800w, img/aayaadi/web/aayaadi-google-06-photo-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 62vw" width="1200" height="1600" loading="lazy" decoding="async" alt="Bedroom with a carved white bed and a tufted brown headboard, framed by moulded wall panels and crystal wall lights">
+            <div class="loupe" aria-hidden="true"></div>
+          </div>
+          <div class="look__side">
+            <div class="look__inset" aria-hidden="true"><img src="img/aayaadi/web/aayaadi-google-06-photo-800.webp" width="1200" height="1600" loading="lazy" decoding="async" alt=""></div>
+            <figcaption class="look__cap"><h3>Panelling</h3><p>Moulded wall panels · Crystal wall lights · Tufted headboard</p></figcaption>
+          </div>
+        </figure>
+
+        <figure class="look" aria-roledescription="slide" aria-label="3 of 3" style="--pos: 50% 60%; --o: 50% 62%">
+          <div class="look__frame">
+            <img class="look__img" src="img/aayaadi/web/aayaadi-google-13-photo-1200.webp" srcset="img/aayaadi/web/aayaadi-google-13-photo-800.webp 800w, img/aayaadi/web/aayaadi-google-13-photo-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 62vw" width="1200" height="1600" loading="lazy" decoding="async" alt="Kitchen with sage-green cabinets and a fluted wooden counter, seen through a dark timber door frame">
+            <div class="loupe" aria-hidden="true"></div>
+          </div>
+          <div class="look__side">
+            <div class="look__inset" aria-hidden="true"><img src="img/aayaadi/web/aayaadi-google-13-photo-800.webp" width="1200" height="1600" loading="lazy" decoding="async" alt=""></div>
+            <figcaption class="look__cap"><h3>Framing</h3><p>Fluted timber counter · Sage-green cabinets · Dark timber door frame</p></figcaption>
+          </div>
+        </figure>
+
+        <div class="looks__ctrl">
+          <span class="looks__counter" id="looks-counter" aria-live="polite">01 / 03</span>
+          <div class="looks__btns">
+            <button class="round-btn looks__prev" type="button" aria-label="Previous look"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4 7 12l8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+            <button class="round-btn looks__next" type="button" aria-label="Next look"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 4 8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DESIGN YOUR BEDROOM: concept room designer (js/room.js builds the controls; see AI-INVENTED.md) ============ -->
+  <section class="lab" id="design" aria-labelledby="design-title">
+    <div class="lab__head">
+      <h2 class="h-sec lab__title" id="design-title" data-split>Design your <em>bedroom</em>.</h2>
+      <p class="lab__lede" data-rv="rise">A concept tool. Try finishes, light and detail on a sample bedroom, then call the studio with your brief. Choices are illustrative, not a quote.</p>
+    </div>
+    <p class="lab__nojs">The room designer needs JavaScript. Call the studio to talk through finishes instead.</p>
+
+    <div class="lab__grid">
+      <div class="lab__stage" data-rv="fade">
+        <div class="lab__canvas" id="lab-canvas">
+<svg class="room" id="room" viewBox="0 0 800 640" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="room-title" focusable="false">
+  <title id="room-title">A sample bedroom that changes as you choose finishes, light and detail</title>
+  <defs>
+    <linearGradient id="g-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset="1" stop-color="#000" stop-opacity=".1"/></linearGradient>
+    <linearGradient id="g-floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity=".04"/><stop offset="1" stop-color="#000" stop-opacity=".34"/></linearGradient>
+    <linearGradient id="g-cove" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="s-glow" stop-opacity=".95"/><stop offset="1" class="s-glow" stop-opacity="0"/></linearGradient>
+    <radialGradient id="g-lamp"><stop offset="0" class="s-glow" stop-opacity=".75"/><stop offset="1" class="s-glow" stop-opacity="0"/></radialGradient>
+    <linearGradient id="g-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="s-sky1"/><stop offset="1" class="s-sky2"/></linearGradient>
+    <radialGradient id="g-day"><stop offset="0" stop-color="#fffbe9" stop-opacity=".55"/><stop offset="1" stop-color="#fffbe9" stop-opacity="0"/></radialGradient>
+    <linearGradient id="g-shaft" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffbe9" stop-opacity=".42"/><stop offset="1" stop-color="#fffbe9" stop-opacity="0"/></linearGradient>
+    <linearGradient id="g-hb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset="1" stop-color="#000" stop-opacity=".18"/></linearGradient>
+    <linearGradient id="g-duvet" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".18"/></linearGradient>
+    <linearGradient id="g-stone" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1ede5"/><stop offset=".5" stop-color="#d9d3c6"/><stop offset="1" stop-color="#ece7dc"/></linearGradient>
+    <linearGradient id="g-marble" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e6e4de"/><stop offset=".5" stop-color="#cdcbc4"/><stop offset="1" stop-color="#e9e7e1"/></linearGradient>
+    <radialGradient id="g-shadow"><stop offset="0" stop-color="#000" stop-opacity=".5"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g-vig" cx=".5" cy=".5" r=".75"><stop offset=".6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".3"/></radialGradient>
+    <pattern id="p-slat" width="16" height="10" patternUnits="userSpaceOnUse"><rect width="16" height="10" fill="#2a1a0e"/><rect width="11" height="10" fill="#8d5b32"/><rect width="2.5" height="10" fill="#b17a45"/><rect x="8.5" width="2.5" height="10" fill="#6f4526"/></pattern>
+    <pattern id="p-flute" width="9" height="10" patternUnits="userSpaceOnUse"><rect x="5.5" width="2.2" height="10" fill="#000" opacity=".14"/><rect x="3.2" width="1.6" height="10" fill="#fff" opacity=".42"/></pattern>
+    <pattern id="p-tuft" width="46" height="46" patternUnits="userSpaceOnUse" patternTransform="translate(0 -8)"><path d="M23 0 46 23 23 46 0 23Z" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="1.4"/><circle cx="23" cy="0" r="2.6" fill="#000" fill-opacity=".34"/><circle cx="0" cy="23" r="2.6" fill="#000" fill-opacity=".34"/></pattern>
+    <pattern id="p-chan" width="31" height="10" patternUnits="userSpaceOnUse"><path d="M0 0V10" stroke="#000" stroke-opacity=".24" stroke-width="1.6"/><path d="M2.2 0V10" stroke="#fff" stroke-opacity=".2" stroke-width="1.2"/></pattern>
+    <pattern id="p-herring" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M0 22 22 0 44 22M0 44 22 22 44 44" fill="none" stroke="#3b2210" stroke-opacity=".4" stroke-width="1.5"/><path d="M0 11 11 0 22 11 33 0 44 11M0 33 11 22 22 33 33 22 44 33" fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="1"/></pattern>
+    <pattern id="p-pleat" width="14" height="10" patternUnits="userSpaceOnUse"><path d="M0 0V10" stroke="#000" stroke-opacity=".12" stroke-width="2"/><path d="M7 0V10" stroke="#fff" stroke-opacity=".18" stroke-width="2"/></pattern>
+    <clipPath id="c-floor"><rect y="430" width="800" height="210"/></clipPath>
+    <clipPath id="c-fw"><rect x="204" y="62" width="392" height="370"/></clipPath>
+    <g id="v-veins" fill="none" stroke-linecap="round"><path d="M204 120C250 150 270 210 250 280S300 380 280 432" stroke="#7f776a" stroke-opacity=".4" stroke-width="2.4"/><path d="M204 200C240 220 250 260 290 270" stroke="#b79a5e" stroke-opacity=".6" stroke-width="1.6"/><path d="M230 62C260 110 330 130 340 190S380 300 400 330" stroke="#7f776a" stroke-opacity=".32" stroke-width="1.6"/><path d="M204 332c30-10 60 10 90 0s60-10 100 8" stroke="#b79a5e" stroke-opacity=".45" stroke-width="1.2"/></g>
+    <g id="hb-round"><path d="M214 398V277a45 45 0 0 1 90 0V398Z"/><path d="M308 398V249a45 45 0 0 1 90 0V398Z"/><path d="M402 398V249a45 45 0 0 1 90 0V398Z"/><path d="M496 398V277a45 45 0 0 1 90 0V398Z"/></g>
+    <g id="hb-tuft"><rect x="214" y="204" width="372" height="194" rx="18"/></g>
+    <g id="hb-chan"><rect x="214" y="212" width="372" height="186" rx="12"/></g>
+  </defs>
+
+  <!-- Shell: ceiling, walls, window, floor, rug -->
+  <g class="L" style="--d:0ms">
+    <rect class="ceil" width="800" height="66"/>
+    <rect class="tray" x="36" y="14" width="728" height="46" rx="3"/>
+    <rect class="covebar" x="36" y="56" width="728" height="5" rx="2.5"/>
+    <rect class="wall" data-hot="walls:wall" y="62" width="800" height="372"/>
+    <rect y="62" width="800" height="372" fill="url(#g-wall)" pointer-events="none"/>
+
+    <g class="v" data-k="feature" data-v="slat" data-hot="walls:feature"><rect x="204" y="62" width="392" height="370" fill="#2a1a0e"/><rect x="204" y="62" width="392" height="370" fill="url(#p-slat)"/></g>
+    <g class="v" data-k="feature" data-v="moulded" data-hot="walls:feature"><rect class="mold-bg" x="204" y="62" width="392" height="370"/><g class="mold"><rect x="214" y="80" width="116" height="332" rx="2"/><rect x="342" y="80" width="116" height="332" rx="2"/><rect x="470" y="80" width="116" height="332" rx="2"/></g><g class="mold-in"><rect x="222" y="88" width="100" height="316" rx="1"/><rect x="350" y="88" width="100" height="316" rx="1"/><rect x="478" y="88" width="100" height="316" rx="1"/></g></g>
+    <g class="v" data-k="feature" data-v="fluted" data-hot="walls:feature"><rect class="mold-bg" x="204" y="62" width="392" height="370"/><rect x="204" y="62" width="392" height="370" fill="url(#p-flute)"/><rect x="204" y="62" width="392" height="6" fill="#000" opacity=".1"/></g>
+    <g class="v" data-k="feature" data-v="stone" data-hot="walls:feature"><rect x="204" y="62" width="392" height="370" fill="url(#g-stone)"/><g clip-path="url(#c-fw)"><use href="#v-veins"/><use href="#v-veins" transform="translate(800 0) scale(-1 1)"/></g></g>
+
+    <g class="v" data-k="ward" data-v="fluted" data-hot="details:ward"><rect x="12" y="96" width="120" height="336" rx="2" fill="#efe7d6"/><rect x="12" y="96" width="120" height="336" rx="2" fill="url(#p-flute)"/><path d="M72 96V432" stroke="#000" stroke-opacity=".2"/><rect class="hw" x="63" y="250" width="3" height="62" rx="1.5"/><rect class="hw" x="78" y="250" width="3" height="62" rx="1.5"/></g>
+    <g class="v" data-k="ward" data-v="arched" data-hot="details:ward"><rect x="12" y="96" width="120" height="336" rx="2" fill="#efe7d6"/><path d="M72 96V432" stroke="#000" stroke-opacity=".2"/><path d="M22 424V170a21 21 0 0 1 42 0V424M80 424V170a21 21 0 0 1 42 0V424" fill="none" stroke="#000" stroke-opacity=".2" stroke-width="2"/><path d="M24 424V170a19 19 0 0 1 38 0V424M82 424V170a19 19 0 0 1 38 0V424" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.2"/><rect class="hw" x="63" y="250" width="3" height="62" rx="1.5"/><rect class="hw" x="78" y="250" width="3" height="62" rx="1.5"/></g>
+
+    <rect class="win-frame" x="664" y="106" width="128" height="258" rx="2"/>
+    <rect x="672" y="114" width="112" height="242" fill="url(#g-sky)"/>
+    <path class="mullion" d="M728 114V356M672 235H784"/>
+    <g class="v" data-k="curtain" data-v="sheer" data-hot="details:curtain"><rect class="hw" x="648" y="96" width="150" height="4" rx="2"/><rect x="652" y="102" width="46" height="332" fill="#fff" fill-opacity=".38"/><rect x="652" y="102" width="46" height="332" fill="url(#p-pleat)"/><rect x="756" y="102" width="44" height="332" fill="#fff" fill-opacity=".38"/><rect x="756" y="102" width="44" height="332" fill="url(#p-pleat)"/></g>
+    <g class="v" data-k="curtain" data-v="heavy" data-hot="details:curtain"><rect class="hw" x="648" y="96" width="150" height="4" rx="2"/><rect class="drape" x="650" y="102" width="60" height="336"/><rect x="650" y="102" width="60" height="336" fill="url(#p-pleat)"/><rect class="drape" x="748" y="102" width="52" height="336"/><rect x="748" y="102" width="52" height="336" fill="url(#p-pleat)"/></g>
+
+    <g clip-path="url(#c-floor)" data-hot="floor:floor">
+      <g class="v" data-k="floor" data-v="herring"><rect class="fl-timber" y="430" width="800" height="210"/><rect y="430" width="800" height="210" fill="url(#p-herring)"/></g>
+      <g class="v" data-k="floor" data-v="plank"><rect class="fl-plank" y="430" width="800" height="210"/><path d="M0 430-220 640M100 430-65 640M200 430 90 640M300 430 245 640M400 430V640M500 430 555 640M600 430 710 640M700 430 865 640M800 430 1020 640" stroke="#4a2f17" stroke-opacity=".4" stroke-width="1.4" fill="none"/><path d="M60 470H210M330 460H470M520 488H690M120 530H300M440 548H640M20 590H220M560 600H760" stroke="#4a2f17" stroke-opacity=".28" stroke-width="1.1" fill="none"/></g>
+      <g class="v" data-k="floor" data-v="marble"><rect y="430" width="800" height="210" fill="url(#g-marble)"/><path d="M0 470C120 490 200 450 330 480S560 520 800 470M60 640C140 580 250 560 330 540M470 640C520 590 640 570 800 560M200 430C240 470 230 520 300 560" fill="none" stroke="#7d7a72" stroke-opacity=".3" stroke-width="1.6"/><path d="M0 560c100-20 180 10 280-10M600 430c-20 60 30 100 10 150" fill="none" stroke="#b79a5e" stroke-opacity=".4" stroke-width="1.2"/><path d="M0 520H800M0 600H800M266 430 150 640M532 430 650 640" stroke="#000" stroke-opacity=".07" stroke-width="1.5" fill="none"/></g>
+      <rect y="430" width="800" height="210" fill="url(#g-floor)" pointer-events="none"/>
+    </g>
+    <rect class="skirt" y="422" width="800" height="12"/>
+
+    <g class="v" data-k="rug" data-v="on" data-hot="floor:rug"><path class="rug" d="M146 456H654L742 616H58Z"/><path d="M170 470H630L710 602H90Z" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="2"/></g>
+    <ellipse cx="400" cy="452" rx="300" ry="18" fill="url(#g-shadow)" pointer-events="none"/>
+  </g>
+
+  <!-- Bed, bedside, lights -->
+  <g class="L" style="--d:140ms">
+    <g data-hot="details:hw"><rect x="148" y="384" width="50" height="56" rx="3" fill="#6b4a30"/><rect x="144" y="378" width="58" height="8" rx="2" fill="#80593a"/><path d="M148 412H198" stroke="#000" stroke-opacity=".3"/><circle class="hw" cx="173" cy="398" r="3.4"/><circle class="hw" cx="173" cy="426" r="3.4"/>
+    <rect x="602" y="384" width="50" height="56" rx="3" fill="#6b4a30"/><rect x="598" y="378" width="58" height="8" rx="2" fill="#80593a"/><path d="M602 412H652" stroke="#000" stroke-opacity=".3"/><circle class="hw" cx="627" cy="398" r="3.4"/><circle class="hw" cx="627" cy="426" r="3.4"/></g>
+
+    <g class="v" data-k="bedside" data-v="lamp" data-hot="light:bedside"><rect class="hw" x="168" y="352" width="10" height="26" rx="2"/><path d="M156 352H190L184 320H162Z" fill="#f1e6cf"/><rect class="hw" x="622" y="352" width="10" height="26" rx="2"/><path d="M610 352H644L638 320H616Z" fill="#f1e6cf"/></g>
+    <g class="v" data-k="bedside" data-v="sconce" data-hot="light:bedside"><rect class="hw" x="165" y="196" width="16" height="7" rx="2"/><rect x="170" y="203" width="6" height="54" rx="3" fill="#fff8e6" fill-opacity=".88" class="hw-s" stroke-width=".8"/><rect class="hw" x="168" y="257" width="10" height="5" rx="2"/><rect class="hw" x="619" y="196" width="16" height="7" rx="2"/><rect x="624" y="203" width="6" height="54" rx="3" fill="#fff8e6" fill-opacity=".88" class="hw-s" stroke-width=".8"/><rect class="hw" x="622" y="257" width="10" height="5" rx="2"/></g>
+    <g class="v" data-k="bedside" data-v="pendant" data-hot="light:bedside"><path class="hw-s" d="M173 62V232M627 62V232" stroke-width="1.6" fill="none"/><rect class="hw" x="167" y="60" width="12" height="6" rx="2"/><rect class="hw" x="621" y="60" width="12" height="6" rx="2"/><circle cx="173" cy="250" r="20" class="globe hw-s" stroke-width="2.4"/><circle cx="627" cy="250" r="20" class="globe hw-s" stroke-width="2.4"/><rect class="hw" x="165" y="228" width="16" height="6" rx="3"/><rect class="hw" x="619" y="228" width="16" height="6" rx="3"/></g>
+
+    <rect x="198" y="398" width="404" height="46" rx="3" fill="#4d3524"/>
+    <g data-hot="bed:head">
+      <g class="v" data-k="head" data-v="rounded"><use href="#hb-round" class="hb"/><use href="#hb-round" fill="url(#g-hb)"/></g>
+      <g class="v" data-k="head" data-v="tufted"><use href="#hb-tuft" class="hb"/><use href="#hb-tuft" fill="url(#p-tuft)"/><use href="#hb-tuft" fill="url(#g-hb)"/></g>
+      <g class="v" data-k="head" data-v="channel"><use href="#hb-chan" class="hb"/><use href="#hb-chan" fill="url(#p-chan)"/><use href="#hb-chan" fill="url(#g-hb)"/><rect class="hb-lo" x="214" y="212" width="372" height="8" rx="4"/></g>
+    </g>
+    <g data-hot="bed:linen"><rect class="pillow" x="236" y="288" width="110" height="68" rx="26"/><rect class="pillow" x="454" y="288" width="110" height="68" rx="26"/><path d="M252 300q30-8 76 0M470 300q30-8 76 0" stroke="#fff" stroke-opacity=".5" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <rect class="linen" x="204" y="330" width="392" height="84" rx="10"/><rect class="linen-hi" x="204" y="330" width="392" height="24" rx="10"/><path d="M204 354H596" stroke="#000" stroke-opacity=".12"/><rect x="204" y="330" width="392" height="84" rx="10" fill="url(#g-duvet)"/></g>
+    <g data-hot="bed:throw"><rect class="throw" x="204" y="376" width="392" height="30"/><rect x="204" y="376" width="392" height="3" fill="#fff" fill-opacity=".25"/><rect class="throw" x="340" y="316" width="62" height="52" rx="12"/><rect class="throw-hi" x="402" y="320" width="58" height="48" rx="12" transform="rotate(-6 431 344)"/><path d="M352 330q14-6 38 0" stroke="#fff" stroke-opacity=".35" stroke-width="2" fill="none"/></g>
+  </g>
+
+  <!-- Light, time of day, depth -->
+  <g class="L2" pointer-events="none">
+    <rect class="night" width="800" height="640"/>
+    <g style="mix-blend-mode:screen">
+      <rect class="g-cove" y="60" width="800" height="200" fill="url(#g-cove)"/>
+      <g class="v" data-k="bedside" data-v="lamp"><circle class="g-lamp" cx="173" cy="334" r="160" fill="url(#g-lamp)"/><circle class="g-lamp" cx="627" cy="334" r="160" fill="url(#g-lamp)"/></g>
+      <g class="v" data-k="bedside" data-v="sconce"><circle class="g-lamp" cx="173" cy="232" r="170" fill="url(#g-lamp)"/><circle class="g-lamp" cx="627" cy="232" r="170" fill="url(#g-lamp)"/></g>
+      <g class="v" data-k="bedside" data-v="pendant"><circle class="g-lamp" cx="173" cy="252" r="170" fill="url(#g-lamp)"/><circle class="g-lamp" cx="627" cy="252" r="170" fill="url(#g-lamp)"/></g>
+      <ellipse class="g-day" cx="728" cy="236" rx="200" ry="220" fill="url(#g-day)"/>
+      <path class="g-day" d="M672 360H784L600 640H250Z" fill="url(#g-shaft)"/>
+    </g>
+    <rect width="800" height="640" fill="url(#g-vig)"/>
+  </g>
+</svg>
+          <p class="lab__hint" id="lab-hint">Tap the room to change it</p>
+          <div class="lab__tip" id="lab-tip" aria-hidden="true"></div>
+          <div class="lab__tools">
+            <button class="icon-btn" id="lab-shuffle" type="button" aria-label="Surprise me with a new combination"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h3c4 0 5 10 9 10h5M3 17h3c1.5 0 2.5-1.2 3.4-2.8M15 7h5M17 4l3 3-3 3M17 14l3 3-3 3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <button class="icon-btn" id="lab-reset" type="button" aria-label="Reset to the starting room"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 3-6.2M4 4v4h4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <div class="seg lab__time" id="lab-time" role="radiogroup" aria-label="Time of day" data-v="day">
+            <span class="seg__thumb" aria-hidden="true"></span>
+            <button type="button" role="radio" aria-checked="true" data-time="day">Day</button>
+            <button type="button" role="radio" aria-checked="false" data-time="eve">Evening</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="lab__tabs" id="lab-tabs" role="tablist" aria-label="Room sections"><span class="lab__ind" aria-hidden="true"></span></div>
+
+      <div class="lab__panel">
+        <div class="lab__presets" id="lab-presets" role="group" aria-label="Starting points"></div>
+        <div class="lab__pages" id="lab-pages"></div>
+      </div>
+
+      <aside class="lab__brief" aria-labelledby="brief-title">
+        <h3 id="brief-title">Your brief</h3>
+        <dl class="brief" id="lab-brief"></dl>
+        <p class="lab__fine">A concept tool for discussion. It shows no real products, prices or lead times.</p>
+        <div class="lab__actions">
+          <a class="btn btn--gold" href="tel:+919873747198">Call the studio</a>
+          <button class="btn btn--ghost" id="lab-copy" type="button">Copy brief</button>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS: FROM FIRST CALL TO HANDOVER (sample copy, see AI-INVENTED.md) ============ -->
+  <section class="process" id="process" aria-labelledby="process-title">
+    <aside class="proc__side">
+      <h2 class="h-sec proc__title" id="process-title" data-split>From first call to <em>handover</em></h2>
+      <p class="proc__note" data-rv="rise">Sample copy for this concept. The studio's own process may differ.</p>
+      <ol class="proc__nav" aria-label="Process steps" data-rv="rise" data-delay="80">
+        <li><button class="proc__nav-btn is-active" type="button" data-proc-step="0"><span class="pnav__dot" aria-hidden="true"></span>Talk and visit</button></li>
+        <li><button class="proc__nav-btn" type="button" data-proc-step="1"><span class="pnav__dot" aria-hidden="true"></span>Plan and materials</button></li>
+        <li><button class="proc__nav-btn" type="button" data-proc-step="2"><span class="pnav__dot" aria-hidden="true"></span>Build and handover</button></li>
+      </ol>
+      <a class="btn btn--gold proc__call" href="tel:+919873747198">Call the studio</a>
+    </aside>
+
+    <div class="proc__main">
+      <div class="proc__timeline" aria-hidden="true"><div class="proc__line-fill" id="proc-line-fill"></div></div>
+      <ol class="proc__stages">
+        <li class="proc__stage is-active" id="proc-stage-0">
+          <span class="proc__num" aria-hidden="true">1</span>
+          <div class="proc__body">
+            <h3 class="proc__stage-title">Talk and visit</h3>
+            <p class="proc__stage-narrative">It starts with a call about the rooms you have in mind, then a visit to the home to see the light, the sizes and how the space is used day to day.</p>
+            <dl class="proc__specs">
+              <div class="pspec"><dt>Walk-through</dt><dd>A visit to see the rooms, take measurements and note what stays.</dd></div>
+              <div class="pspec"><dt>Daily routines</dt><dd>How you cook, host, work and store things, room by room.</dd></div>
+              <div class="pspec"><dt>First scope</dt><dd>Which rooms are in, and what each one needs to do.</dd></div>
+            </dl>
+            <p class="proc__target"><span class="pm__label">You leave with</span><span class="pm__val">A clear scope for the rooms in question</span></p>
+          </div>
+        </li>
+
+        <li class="proc__stage" id="proc-stage-1">
+          <span class="proc__num" aria-hidden="true">2</span>
+          <div class="proc__body">
+            <h3 class="proc__stage-title">Plan and materials</h3>
+            <p class="proc__stage-narrative">Layouts and joinery drawings take shape alongside real samples, so stone, timber, fabric and brass are judged in your own light, not on a screen.</p>
+            <dl class="proc__specs">
+              <div class="pspec"><dt>Layout and joinery</dt><dd>Plans and drawings for wardrobes, panelling and storage.</dd></div>
+              <div class="pspec"><dt>Material samples</dt><dd>Stone, timber profiles, laminates, fabrics and handles to hold and compare.</dd></div>
+              <div class="pspec"><dt>Lighting plan</dt><dd>Where the coves, backlit walls and dimmable circuits go.</dd></div>
+            </dl>
+            <p class="proc__target"><span class="pm__label">You leave with</span><span class="pm__val">Drawings and a material palette to approve</span></p>
+          </div>
+        </li>
+
+        <li class="proc__stage" id="proc-stage-2">
+          <span class="proc__num" aria-hidden="true">3</span>
+          <div class="proc__body">
+            <h3 class="proc__stage-title">Build and handover</h3>
+            <p class="proc__stage-narrative">Carpentry, stone, paint and lighting are made and fitted on site. Before handover, the rooms are walked together and anything unfinished is noted and fixed.</p>
+            <dl class="proc__specs">
+              <div class="pspec"><dt>Site coordination</dt><dd>Regular visits while joinery, stone and electrical work are fitted.</dd></div>
+              <div class="pspec"><dt>Snag walk-through</dt><dd>A close look at hinges, edges, finishes and alignments.</dd></div>
+              <div class="pspec"><dt>Handover</dt><dd>Final styling and a guided walk through the finished home.</dd></div>
+            </dl>
+            <p class="proc__target"><span class="pm__label">You leave with</span><span class="pm__val">Finished rooms, walked through together</span></p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ FAQ (sample copy: see AI-INVENTED.md) ============ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="faq__left">
+      <div>
+        <h2 class="h-sec faq__title" id="faq-title" data-split>Questions before you <em>call</em>.</h2>
+        <p class="faq__note" data-rv="rise">Answers are sample copy for this concept.</p>
+      </div>
+      <div class="callcard" data-rv="rise" data-delay="120">
+        <h3>Prefer to talk first?</h3>
+        <p>Call the studio and describe the rooms you have in mind.</p>
+        <a class="btn btn--gold" href="tel:+919873747198">Call +91&nbsp;98737&nbsp;47198</a>
+      </div>
+    </div>
+    <div class="faq__list">
+      <details open data-rv="rise"><summary>What kinds of spaces does the studio design?</summary><p>Homes in and around Gurugram, from single rooms such as a bedroom or study to full apartments.</p></details>
+      <details data-rv="rise" data-delay="60"><summary>How do I start a project?</summary><p>Call the studio or message them on Instagram. A first conversation covers the rooms, your timeline and how you use the space.</p></details>
+      <details data-rv="rise" data-delay="120"><summary>Do you work with my own furniture and pieces?</summary><p>Yes. Existing furniture and favourite pieces can be planned into the new layout.</p></details>
+      <details data-rv="rise" data-delay="180"><summary>How long does a project take?</summary><p>It depends on the size of the home and the scope of carpentry. A timeline is agreed after the site visit.</p></details>
+      <details data-rv="rise" data-delay="240"><summary>Can I see the studio's work in person?</summary><p>The studio is at DLF Phase 2, Gurugram. Call ahead to arrange a visit.</p></details>
+      <details data-rv="rise" data-delay="240"><summary>Is this the studio's official website?</summary><p>No. This is an independent concept prepared for discussion.</p></details>
+    </div>
+  </section>
+
+  <!-- ============ ENQUIRE ============ -->
+  <section class="enquire" id="enquire" aria-labelledby="enquire-title">
+    <div class="enquire__bg" aria-hidden="true" data-parallax="0.08"><img src="img/aayaadi/web/aayaadi-google-15-photo-1440.webp" srcset="img/aayaadi/web/aayaadi-google-15-photo-960.webp 960w, img/aayaadi/web/aayaadi-google-15-photo-1440.webp 1440w" sizes="100vw" width="1440" height="811" loading="lazy" decoding="async" alt=""></div>
+    <div class="enquire__in">
+      <h2 class="enquire__text" id="enquire-title" data-split>Let's shape your <em>space</em>.</h2>
+      <p class="enquire__dim" data-rv="rise" data-delay="120">Start a conversation with the studio by phone, or find them on Instagram.</p>
+      <div class="enquire__actions" data-rv="rise" data-delay="200">
+        <a class="btn btn--call" href="tel:+919873747198">Call +91&nbsp;98737&nbsp;47198</a>
+        <a class="tlink tlink--dark" href="https://www.instagram.com/aayaadi_designs/" target="_blank" rel="noopener">Instagram @aayaadi_designs <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <h2 class="sr-only">Contact</h2>
+    <div class="footer__photo" aria-hidden="true"><img src="img/aayaadi/web/aayaadi-google-17-photo-1200.webp" width="1200" height="1600" loading="lazy" decoding="async" alt=""></div>
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <p class="footer__mark">Aayaadi</p>
+        <p class="footer__tag">Interior design · Gurugram</p>
+        <p class="footer__about">An independent concept by Urbn Creations, prepared for discussion with Aayaadi Designs. This is not Aayaadi's official website. The wordmark is a typographic placeholder, not the studio's logo, and photographs remain the property of their owners.</p>
+        <ul class="footer__contact">
+          <li><span class="footer__k">Address</span><a href="https://www.google.com/maps/place/Aayaadi+Designs/@28.4832656,77.0811613,17z" target="_blank" rel="noopener">19 Ground Floor, K-16, DLF Phase 2, Sector 25, Gurugram, Haryana 122002</a></li>
+          <li><span class="footer__k">Phone</span><a href="tel:+919873747198">+91&nbsp;98737&nbsp;47198</a></li>
+          <li><span class="footer__k">Instagram</span><a href="https://www.instagram.com/aayaadi_designs/" target="_blank" rel="noopener">@aayaadi_designs</a></li>
+        </ul>
+      </div>
+      <nav class="footer__col" aria-label="The studio">
+        <h3>The studio</h3>
+        <a href="#studio">Studio <span aria-hidden="true">↗</span></a>
+        <a href="#work">Work <span aria-hidden="true">↗</span></a>
+        <a href="#themes">Pillars <span aria-hidden="true">↗</span></a>
+        <a href="#details">Closer looks <span aria-hidden="true">↗</span></a>
+        <a href="#design">Design your room <span aria-hidden="true">↗</span></a>
+        <a href="#process">Process <span aria-hidden="true">↗</span></a>
+      </nav>
+      <nav class="footer__col" aria-label="Contact links">
+        <h3>Contact</h3>
+        <a href="#faq">Questions <span aria-hidden="true">↗</span></a>
+        <a href="#enquire">Enquire <span aria-hidden="true">↗</span></a>
+        <a href="tel:+919873747198">Call the studio <span aria-hidden="true">↗</span></a>
+        <a href="https://www.instagram.com/aayaadi_designs/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a>
+        <a href="https://www.google.com/maps/place/Aayaadi+Designs/@28.4832656,77.0811613,17z" target="_blank" rel="noopener">Open in Google Maps <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+    <div class="footer__bar"><span>Independent concept, not for public release</span><a href="#top">Back to top</a></div>
+  </footer>
+</main>
+
+<!-- Work lightbox: a native modal dialog filled from the plate that opened it (main.js). Closed by default. -->
+<dialog class="lightbox" aria-labelledby="lightbox-title">
+  <figure class="lightbox__figure">
+    <img class="lightbox__img" alt="">
+    <figcaption class="lightbox__cap"><strong id="lightbox-title"></strong><span class="lightbox__num"></span><span class="lightbox__type"></span></figcaption>
+  </figure>
+  <button class="lightbox__btn lightbox__close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+  <button class="lightbox__btn lightbox__prev" type="button" aria-label="Previous photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4 7 12l8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+  <button class="lightbox__btn lightbox__next" type="button" aria-label="Next photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 4 8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+</dialog>
+
+<script src="js/lenis.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/room.js"></script>
+</body>
+</html>
+
