@@ -82,6 +82,19 @@ components:
 > words are lit at once under `prefers-reduced-motion`). Section copy was rewritten away from
 > abstract headings and repeated `A · B · C` keyword triplets; see `AI-INVENTED.md`.
 >
+> The same pass then reached the lower half of the page. **Process**: the three deliverables per
+> stage sit in a recessed bone tray (hairline border, lit top edge, soft inner shadow) a step below
+> the white ground; the active stage number carries a brass glow, and so do the timeline fill and
+> the stage dot. **FAQ**: every row carries the horizontal padding, so opening one lifts it onto
+> white paper with a soft cast and nothing shifts sideways; the call card gained a warm pool inside
+> it and a champagne lit edge. **Footer**: a warm pool sits behind the brand block, opposite the
+> photograph. Display serif headings in all three now use the same `"opsz"` treatment, with `72`
+> rather than `144` on sub-heads so they do not go too fine at smaller sizes.
+>
+> Translucent surfaces now read from `--ink-rgb` and `--champ-rgb` instead of hardcoded channels.
+> Several had been left on the pre-pass ink (`rgba(23, 19, 15, …)`) and were fading to a colour the
+> page no longer used, which showed as a seam against the enquire and footer photographs.
+>
 > **Polish pass, 29 Oct 2026.** The tokens in the frontmatter above predate this pass. The shipped system in `css/style.css` now uses warm grounds (`--ink #17130f`, `--bone #f6f1e7`, `--stone #ece3d3`, `--white #fffdf8`), brass `#85571d` / `#96631f` with champagne `#e8cf9f` on ink, Fraunces display (light, italic brass emphasis word) over Geist body, and a clamp-based type scale. The blurred ambient orbs and the Atmosphere selector were removed. Depth now comes from layered plate shadows (offset plus blur), a brass offset frame on the pillars exhibition, and scrubbed parallax. Hover never scales photographs. Motion is word-mask headings, a clip-path wipe for plates, a wipe exhibition for the pillars, a loupe on Closer looks and a scroll-driven process line.
 
 ## Overview
